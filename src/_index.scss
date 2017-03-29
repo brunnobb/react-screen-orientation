@@ -1,8 +1,12 @@
 .react-orientation {
-  display: none;
+  display: inherit;
 }
 
 @media all and (orientation: landscape) {
+.react-orientation--portrait {
+    display: none;
+  }
+
   .react-orientation--landscape {
     display: inherit;
   }
@@ -11,5 +15,9 @@
 @media all and (orientation: portrait) {
   .react-orientation--portrait {
     display: inherit;
+  }
+
+  .react-orientation--landscape {
+    display: none;
   }
 }

@@ -160,6 +160,8 @@ var DeviceOrientation = function (_Component2) {
 
         angle = window.screen.orientation;
       }
+
+      console.log(orientation + ' ' + angle + ' ' + 'degrees');
       this.setState({
         orientation: orientation,
         type: type,
