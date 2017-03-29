@@ -1,10 +1,10 @@
 {
   "name": "react-screen-orientation",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Display Components based on screen orientation",
   "main": "./lib/index.js",
   "scripts": {
-    "compile": "babel --presets es2015,react -d lib/ src/",
+    "compile": "babel --presets es2015,react -d ./ src/",
     "prepublish": "npm run compile",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
