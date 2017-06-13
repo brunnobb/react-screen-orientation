@@ -13,6 +13,8 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -50,10 +52,10 @@ var Orientation = exports.Orientation = function (_Component) {
 }(_react.Component);
 
 Orientation.propTypes = {
-  alwaysRender: _react.PropTypes.bool,
-  children: _react.PropTypes.node,
-  className: _react.PropTypes.string,
-  orientation: _react.PropTypes.oneOf(['portrait', 'landscape']).isRequired
+  alwaysRender: _propTypes.PropTypes.bool,
+  children: _propTypes.PropTypes.node,
+  className: _propTypes.PropTypes.string,
+  orientation: _propTypes.PropTypes.oneOf(['portrait', 'landscape']).isRequired
 };
 
 Orientation.defaultProps = {
@@ -225,11 +227,11 @@ var isOrientation = function isOrientation(props, propName, componentName, locat
 };
 
 DeviceOrientation.propTypes = {
-  children: _react.PropTypes.oneOfType([isOrientation, _react.PropTypes.arrayOf(isOrientation)]).isRequired,
-  className: _react.PropTypes.string,
-  lockOrientation: _react.PropTypes.oneOfType([_react.PropTypes.oneOf(LOCK_ORIENTATIONS), _react.PropTypes.arrayOf(_react.PropTypes.oneOf(LOCK_ORIENTATIONS))]),
-  onLockOrientation: _react.PropTypes.func,
-  onOrientationChange: _react.PropTypes.func
+  children: _propTypes.PropTypes.oneOfType([isOrientation, _propTypes.PropTypes.arrayOf(isOrientation)]).isRequired,
+  className: _propTypes.PropTypes.string,
+  lockOrientation: _propTypes.PropTypes.oneOfType([_propTypes.PropTypes.oneOf(LOCK_ORIENTATIONS), _propTypes.PropTypes.arrayOf(_propTypes.PropTypes.oneOf(LOCK_ORIENTATIONS))]),
+  onLockOrientation: _propTypes.PropTypes.func,
+  onOrientationChange: _propTypes.PropTypes.func
 };
 
 DeviceOrientation.defaultProps = {
